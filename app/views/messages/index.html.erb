@@ -12,8 +12,8 @@
       <br>
     </div>
     <% end %>
-  </div>
-</div>
+  </div> <!-- panel-body -->
+</div> <!-- panel -->
 
 
 <%= form_for(@message, class: "form-horizontal") do |f| %>
@@ -22,18 +22,18 @@
     <div class="col-sm-5">
       <%= f.text_field :name, id: "InputName", class: "form-control", placeholder: "name" %>
     </div>
-  </div>
+  </div> <!-- form-group -->
 
   <div class="form-group">
     <label for="InputComment" class="col-sm-offset-3 col-sm-1 control-label">内容</label>
     <div class="col-sm-5">
       <%= f.text_area :body, id:"InputComment", class:"form-control", cols: 10, rows: 5, placeholder: "comment"%>
     </div>
-  </div>
+  </div> <!-- form-group -->
 
   <div class="form-group sub_btn">
     <div class="col-sm-offset-7 col-sm-5">
       <%= f.submit class: "btn btn-primary" %>
     </div>
-  </div>
+  </div> <!-- form-group sub_btn-->
 <% end %>
