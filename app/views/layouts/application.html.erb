@@ -19,6 +19,12 @@
 
     <div class="container" id="contents">
       <div class="row">
+      <% if notice %>
+        <div class="alert alert-info">
+          <%= notice %>
+        </div>
+      <% end %>
+
       <%= yield %>
       </div>
     </div><!-- container-->

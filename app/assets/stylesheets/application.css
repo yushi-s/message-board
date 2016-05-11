@@ -47,7 +47,7 @@ html, body {
 
 .panel-heading{
   padding: 0.8rem 2rem;
-  color: rgb(68, 145, 215);;
+  color: rgb(68, 145, 215);
   border: 1px rgb(189, 189, 189) solid;
 }
 
@@ -66,30 +66,34 @@ html, body {
   letter-spacing: 0.03rem;
 }
 
-.new_message {
+.form_horizontal {
   margin-top: 6rem;
 }
 
-.new_message .form-group {
+.form_horizontal .form-group {
   padding-bottom: 3rem;
 }
 
-.new_message .form-group .control-label {
+.form_horizontal .form-group .control-label {
 text-align: right;
 font-size: 14px;
 letter-spacing: 0.1rem;
 }
 
-.new_message .sub_btn{
+.form_horizontal .sub_btn{
   margin-top: 6.5rem;
 }
 
-.new_message .sub_btn .btn{
+.form_horizontal .sub_btn .btn{
   letter-spacing: 0.1rem;
 }
 
-.alert {
-  margin: 2rem 6rem;
+.alert-danger {
+  margin: 0 6rem 2rem 6rem;
+}
+
+.alert-info {
+  margin: 2rem 6rem 0 6rem;
 }
 
 footer {
@@ -120,16 +124,16 @@ footer {
     margin: 1.5rem;
   }
 
-  .new_message {
+  .form_horizontal {
     margin-top: 5rem;
   }
 
-  .new_message .form-group {
+  .form_horizontal .form-group {
     margin: 1.5rem;
     padding-bottom: 1rem;
   }
 
-  .new_message .sub_btn {
+  .form_horizontal .sub_btn {
     margin-top: 1.5rem;
     text-align: right;
   }

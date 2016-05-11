@@ -1,0 +1,36 @@
+<%= form_for(@message, class: "form-horizontal") do |f| %>
+<div class="form_horizontal">
+  <% if @message.errors.present? %>
+    <div class="alert alert-danger">
+      <%= alert %>
+      <ul>
+        <% @message.errors.full_messages.each do |full_message| %>
+          <li>
+            <%= full_message %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <label for="InputName" class="col-sm-offset-3 col-sm-1 control-label label_name">名前</label>
+    <div class="col-sm-5">
+      <%= f.text_field :name, id: "InputName", class: "form-control", placeholder: "name" %>
+    </div>
+  </div> <!-- form-group -->
+
+  <div class="form-group">
+    <label for="InputComment" class="col-sm-offset-3 col-sm-1 control-label">内容</label>
+    <div class="col-sm-5">
+      <%= f.text_area :body, id:"InputComment", class:"form-control", cols: 10, rows: 5, placeholder: "comment"%>
+    </div>
+  </div> <!-- form-group -->
+
+  <div class="form-group sub_btn">
+    <div class="col-sm-offset-7 col-sm-5">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+  </div> <!-- form-group sub_btn-->
+</div>
+<% end %>
