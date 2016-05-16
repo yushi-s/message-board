@@ -41,6 +41,11 @@ html, body {
   color: #fff;
 }
 
+.navbar .navbar-brand:hover {
+  font-size: 2rem;
+  color: #fff;
+}
+
 .panel {
   margin: 4rem 6rem;
 }
@@ -66,12 +71,29 @@ html, body {
   letter-spacing: 0.03rem;
 }
 
-.form_horizontal {
-  margin-top: 6rem;
+div.panel-body span.age {
+  font-size: 13px;
 }
 
-.form_horizontal .form-group {
-  padding-bottom: 3rem;
+div.panel-body span.btn {
+  padding: 0.05rem 0.3rem;
+  letter-spacing: 0.05rem;
+}
+
+div.panel-body span.btn .btn_edit {
+  text-decoration: none;
+}
+
+div.panel-body span.btn .btn_destroy {
+  text-decoration: none;
+}
+
+.form_horizontal {
+  margin-top: 4rem;
+}
+
+div.form-group {
+  margin-bottom: 1rem;
 }
 
 .form_horizontal .form-group .control-label {
@@ -80,12 +102,12 @@ font-size: 14px;
 letter-spacing: 0.1rem;
 }
 
-.form_horizontal .sub_btn{
-  margin-top: 6.5rem;
-}
-
 .form_horizontal .sub_btn .btn{
   letter-spacing: 0.1rem;
+}
+
+div.sub_btn {
+  margin-top: 2.5rem;
 }
 
 .alert-danger {
