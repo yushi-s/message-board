@@ -88,21 +88,20 @@ div.panel-body span.btn .btn_destroy {
   text-decoration: none;
 }
 
-.form_horizontal {
-  margin-top: 4rem;
+div.form-horizontal {
+  margin-top: 5rem;
 }
 
 div.form-group {
   margin-bottom: 1rem;
 }
 
-.form_horizontal .form-group .control-label {
-text-align: right;
+div.form-group label.control-label {
 font-size: 14px;
 letter-spacing: 0.1rem;
 }
 
-.form_horizontal .sub_btn .btn{
+div.sub_btn .btn{
   letter-spacing: 0.1rem;
 }
 
@@ -146,18 +145,15 @@ footer {
     margin: 1.5rem;
   }
 
-  .form_horizontal {
+  div.form-horizontal {
     margin-top: 5rem;
   }
 
-  .form_horizontal .form-group {
-    margin: 1.5rem;
-    padding-bottom: 1rem;
+  div.form-group {
+    padding: 0 3rem;
   }
 
-  .form_horizontal .sub_btn {
-    margin-top: 1.5rem;
+  div.sub_btn {
     text-align: right;
   }
-
 }
