@@ -97,8 +97,17 @@ div.form-group {
 }
 
 div.form-group label.control-label {
-font-size: 14px;
-letter-spacing: 0.1rem;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+
+div.form-group .form_naco {
+  /*width: 20rem;*/
+  width: 50%;
+}
+
+div.form-group .form_age {
+  width: 25%;
 }
 
 div.sub_btn .btn{
@@ -151,6 +160,14 @@ footer {
 
   div.form-group {
     padding: 0 3rem;
+  }
+
+  div.form-group .form_naco {
+    width: 100%;
+  }
+
+  div.form-group .form_age {
+    width: 50%;
   }
 
   div.sub_btn {
